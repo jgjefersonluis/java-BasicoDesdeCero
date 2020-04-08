@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package joptionpane;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author jg_je
- */
 public class EntradaDatosPaneParseInt {
 
     public static void main(String[] args) {
@@ -18,8 +9,7 @@ public class EntradaDatosPaneParseInt {
         int edad, nacimiento;
 
         nombre = JOptionPane.showInputDialog("Ingressa tu nombre");
-        leer = JOptionPane.showInputDialog("Ingressa tu fecha de nascimiento");
-        nacimiento = Integer.parseInt(leer);
+        nacimiento = Integer.parseInt(JOptionPane.showInputDialog("Ingressa tu fecha de nascimiento"));
 
         edad = 2020 - nacimiento;
 
